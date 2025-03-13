@@ -1,0 +1,147 @@
+/* Luxurious Gradient Background */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f3ec78, #af4261); /* Gold and pink gradient */
+  color: #333;
+  animation: fadeInBackground 2s ease-in-out;
+}
+
+/* Fade-in Background Animation */
+@keyframes fadeInBackground {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Elegant Header */
+header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Deep shadow for premium feel */
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Navbar with Smooth Scroll Effect */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.8); /* Light, translucent effect */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #af4261;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f3ec78;
+  transform: scale(1.1); /* Subtle zoom */
+}
+
+/* About Section Styling */
+#about {
+  background: rgba(255, 255, 255, 0.9); /* Soft white background */
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Elevated card effect */
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Stylish Project Cards */
+.project {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+  text-align: center;
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Lift-up hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+.project img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  color: #af4261;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Footer with Gradient Border */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #333;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid #af4261;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+footer a {
+  color: #f3ec78;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #af4261; /* Color shift on hover */
+}
+
+/* Decorative Elements */
+body:before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%);
+  z-index: -1;
+  transform: rotate(30deg);
+}
